@@ -81,7 +81,7 @@ async function run() {
 
     // Order Collection API
 
-    app.get("/orders", verifyJWT, async (req, res) => {
+    app.get("/order", verifyJWT, async (req, res) => {
       const decodedEmail = req.decoded.email;
       const email = req.query.email;
       if (email === decodedEmail) {
